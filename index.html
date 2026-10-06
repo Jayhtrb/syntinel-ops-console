@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="SynTinel operations console - call queue, SLA, workforce, cloud session and workstation login telemetry."
+    />
+    <meta name="theme-color" content="#05070A" />
+    <title>SynTinel · Operations Console</title>
+    <style>
+      /* Paint the shell before React mounts so there is no white flash. */
+      html,
+      body,
+      #root {
+        margin: 0;
+        min-height: 100%;
+        background: #05070a;
+        color: #e9f0f8;
+      }
+      #root {
+        isolation: isolate;
+      }
+      .boot-splash {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        font: 500 11px/1 ui-monospace, "IBM Plex Mono", monospace;
+        letter-spacing: 0.32em;
+        color: #5d6e82;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot-splash">Initialising SynTinel…</div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
